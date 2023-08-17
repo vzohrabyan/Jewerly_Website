@@ -1,0 +1,37 @@
+.App {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+input:focus {
+   outline: none;
+}
+
+@media screen and (max-width: 1000px) {
+   .leftSide {
+       display: none !important;
+   }
+ }
+
+ @media screen and (max-width: 650px) {
+   .rightSide img {
+       display: none !important;
+   }
+   .productsHeader > ul {
+      display: flex;
+      gap: 25px !important;
+   }
+   header {
+      padding: 15px !important;
+   }
+   footer > .websiteInfo {
+       flex-direction: column;
+   }
+   footer > .llc > ul {
+      flex-direction: column;
+      gap: 5px !important;
+  }
+ }
+
